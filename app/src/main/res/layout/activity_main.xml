@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvstatistic"
+        android:textSize="50dp"
+        android:textColor="@color/beyaz"
+        android:textAlignment="center"
+        ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tvstatistic"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ly"
+        android:background="@drawable/custom_linear2"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvstatistic"
+            android:orientation="horizontal"
+            android:id="@+id/ly1"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toplam Vaka"
+                android:textColor="@color/beyaz"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="15dp"
+                android:layout_weight="2"
+                android:textColor="@color/beyaz"
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvcases"
+                android:textColor="@color/beyaz"
+                android:textSize="15dp"
+                android:layout_weight="1.1"
+                android:textAlignment="center"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ly2"
+            android:layout_below="@id/ly1"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toplam Ölüm"
+                android:textColor="@color/beyaz"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="15dp"
+                android:layout_weight="2"
+                android:textColor="@color/beyaz"
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvdeaths"
+                android:textColor="@color/beyaz"
+                android:textSize="15dp"
+                android:layout_weight="1.1"
+                android:textAlignment="center"
+                ></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ly3"
+            android:layout_below="@id/ly2"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toplam Kurtarma"
+                android:textColor="@color/beyaz"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="15dp"
+                android:layout_weight="2"
+                android:textColor="@color/beyaz"
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvrecovered"
+                android:textColor="@color/beyaz"
+                android:textSize="15dp"
+                android:layout_weight="1.1"
+                android:textAlignment="center"
+                ></TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ly4"
+        android:layout_below="@id/ly"
+        android:layout_centerVertical="true"
+        android:background="@drawable/custom_linear"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yeni Vakalar"
+            android:textColor="@color/beyaz"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvnewcases"
+            android:textColor="@color/beyaz"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            ></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ly5"
+        android:layout_below="@+id/ly4"
+        android:layout_centerVertical="true"
+        android:background="@drawable/custom_linear"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yeni Ölümler"
+            android:textColor="@color/beyaz"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvnewdeaths"
+            android:textColor="@color/beyaz"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            ></TextView>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Etkilenen Ülke Listesi"
+        android:id="@+id/btnTikla"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/beyaz"
+        android:background="@drawable/custom_button"
+
+        ></Button>
+
+
+</RelativeLayout>
