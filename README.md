@@ -4,9 +4,6 @@
 
 * Rapid API data verisinden request atarak yapılmış android uygulamadır.
 
-![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=mhmtkcmn10&show_icons=true&theme=cobalt)
-
-
 ### Bilgilendirme Ekranı
 ![foto1](https://user-images.githubusercontent.com/46399299/80190228-a0035280-861c-11ea-8869-dc357b094fb5.jpg)
 
